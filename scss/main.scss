@@ -78,11 +78,15 @@ nav {
     text-decoration: underline;
 }
 .header-text-container {
+    @include flex(column);
+    @include mpg(0, 0, 20px);
+    align-self: center;
     text-align: center;
+    width: 80%
 }
 .arrow-down-1 {
-    @include mpg(0, 10px);
-    font-size: 1.8rem;
+    @include mpg(0, 30px);
+    font-size: 1.5rem;
     color:white;
     text-align: center;
 }

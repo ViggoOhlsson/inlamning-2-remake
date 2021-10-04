@@ -87,13 +87,21 @@ nav {
   text-decoration: underline; }
 
 .header-text-container {
-  text-align: center; }
+  display: flex;
+  flex-direction: column;
+  align-items: "stretch";
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+  align-self: center;
+  text-align: center;
+  width: 80%; }
 
 .arrow-down-1 {
   margin: 0;
-  padding: 10px;
+  padding: 30px;
   gap: 0;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: white;
   text-align: center; }
 
