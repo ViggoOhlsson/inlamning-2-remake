@@ -1,0 +1,13 @@
+@import 'variables';
+
+@mixin flex($direction, $align: "stretch") {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+}
+//mpg står för margin, padding, gap.
+@mixin mpg($margin: 0, $padding: 0, $gap: 0) {
+    margin: $margin;
+    padding: $padding;
+    gap: $gap;
+}
