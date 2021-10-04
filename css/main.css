@@ -98,12 +98,13 @@ nav {
   width: 80%; }
 
 .arrow-down-1 {
+  align-self: center;
   margin: 0;
   padding: 30px;
   gap: 0;
+  width: fit-content;
   font-size: 1.5rem;
-  color: white;
-  text-align: center; }
+  color: white; }
 
 main {
   display: flex;
@@ -153,11 +154,12 @@ main {
 
 .arrow-down-2 {
   margin: 0;
-  padding: 10px;
+  padding: 30px;
   gap: 0;
+  width: fit-content;
   font-size: 1.5rem;
   color: black;
-  text-align: center; }
+  align-self: center; }
 
 footer {
   display: flex;
@@ -176,6 +178,13 @@ footer {
   padding: 0;
   gap: 20px; }
 
+.footer-socials {
+  display: grid;
+  grid-template-columns: 20px 1fr; }
+
+.footer-socials > i {
+  text-align: center; }
+
 @media screen and (min-width: 768px) {
   .hamburger-wrapper {
     display: none; }
@@ -185,7 +194,7 @@ footer {
     align-items: "stretch";
     margin: 0;
     padding: 30px;
-    gap: 20px;
+    gap: 40px;
     visibility: visible;
     opacity: 1;
     align-self: stretch;

@@ -85,10 +85,11 @@ nav {
     width: 80%
 }
 .arrow-down-1 {
+    align-self: center;
     @include mpg(0, 30px);
+    width:fit-content;
     font-size: 1.5rem;
     color:white;
-    text-align: center;
 }
 main {
     @include flex(column, center);
@@ -128,10 +129,11 @@ main {
     font-size: 1.5rem;
 }
 .arrow-down-2 {
-    @include mpg(0, 10px);
+    @include mpg(0, 30px);
+    width: fit-content;
     font-size: 1.5rem;
     color:black;
-    text-align: center;
+    align-self: center;
 }
 footer {
     @include flex(column);
@@ -142,13 +144,20 @@ footer {
     @include flex(column);
     @include mpg(0, 0, 20px);
 }
+.footer-socials {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+}
+.footer-socials > i{
+    text-align: center;
+}
 @media screen and (min-width: 768px) {
     .hamburger-wrapper {
         display: none;
     }
     .links-wrapper {
         @include flex(row);
-        @include mpg(0, 30px, 20px);
+        @include mpg(0, 30px, 40px);
         visibility: visible;
         opacity: 1;
         align-self: stretch;
