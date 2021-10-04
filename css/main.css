@@ -10,6 +10,7 @@ header {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: "stretch";
   justify-content: space-between; }
 
 .hero {
@@ -66,17 +67,17 @@ nav {
   transition: 0.2s; }
 
 .links-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 5px 0;
+  gap: 0;
   background-color: rgba(255, 255, 255, 0.1);
   visibility: hidden;
   opacity: 0;
   transition: 0.3s;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin: 0;
-  padding: 5px 0;
-  gap: 0; }
+  width: 100%; }
 
 .links-wrapper a {
   color: white;
@@ -89,18 +90,18 @@ nav {
   text-align: center; }
 
 .arrow-down-1 {
-  font-size: 1.8rem;
-  color: white;
-  text-align: center;
   margin: 0;
   padding: 10px;
-  gap: 0; }
+  gap: 0;
+  font-size: 1.8rem;
+  color: white;
+  text-align: center; }
 
 main {
-  color: black;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  color: black; }
 
 .profil-grid {
   display: grid;
@@ -132,10 +133,10 @@ main {
   box-shadow: 0 0 80px #616161; }
 
 .profil-bio {
-  background-color: #b6b6b6;
   margin: 0;
   padding: 30px;
   gap: 0;
+  background-color: #b6b6b6;
   border-radius: 5px;
   font-size: 0.7rem; }
 
@@ -143,21 +144,21 @@ main {
   font-size: 1.5rem; }
 
 .arrow-down-2 {
-  font-size: 1.5rem;
-  color: black;
-  text-align: center;
   margin: 0;
   padding: 10px;
-  gap: 0; }
+  gap: 0;
+  font-size: 1.5rem;
+  color: black;
+  text-align: center; }
 
 footer {
+  display: flex;
+  flex-direction: column;
+  align-items: "stretch";
   margin: 0;
   padding: 40px 60px;
   gap: 50px;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  align-items: "stretch"; }
+  background-color: black; }
 
 .footer-cell {
   display: flex;
@@ -171,16 +172,16 @@ footer {
   .hamburger-wrapper {
     display: none; }
   .links-wrapper {
-    visibility: visible;
-    opacity: 1;
     display: flex;
     flex-direction: row;
     align-items: "stretch";
-    align-self: stretch;
-    justify-content: right;
     margin: 0;
     padding: 30px;
     gap: 20px;
+    visibility: visible;
+    opacity: 1;
+    align-self: stretch;
+    justify-content: right;
     width: 100%;
     font-size: 1rem;
     width: auto; }
@@ -192,4 +193,11 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: "stretch";
-    justify-content: space-evenly; } }
+    margin: 0;
+    padding: 50px 10%;
+    gap: 0;
+    justify-content: space-between; }
+  .footer-cell {
+    margin: 0;
+    padding: 0;
+    gap: 10px; } }
